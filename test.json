@@ -1,0 +1,79 @@
+{
+  "front-version": "2.9.0",
+  "version": 3,
+  "nodes": [
+    {
+      "type": "Project",
+      "id": "dc9bf176-5441-4106-b406-a33022eea532",
+      "lastModified": "2017-08-31T11:16:02.264+02:00",
+      "name": "test",
+      "remoteModification": "2017-08-31T09:07:11.933Z"
+    },
+    {
+      "type": "Scenario",
+      "id": "9de049c7-a352-4aa2-9f51-da3fcf3b663a",
+      "lastModified": "2017-08-31T11:16:02.270+02:00",
+      "name": "Scenario 1",
+      "requestOrder": [
+        "Request 1"
+      ],
+      "parentId": "dc9bf176-5441-4106-b406-a33022eea532"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded"
+        },
+        "bodyType": "Text",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "httpbin.org",
+        "path": "/anything"
+      },
+      "id": "072cc8c2-73ee-44b2-82d5-208b72c714c9",
+      "lastModified": "2017-08-31T11:16:02.270+02:00",
+      "name": "Request 1",
+      "headers": [],
+      "assertions": [
+        {
+          "comparison": "GreateOrEqual",
+          "subject": "ResponseStatus",
+          "path": "code",
+          "value": "200"
+        },
+        {
+          "comparison": "Less",
+          "subject": "ResponseStatus",
+          "path": "code",
+          "value": "300"
+        },
+        {
+          "comparison": "GreateOrEqual",
+          "subject": "ResponseXmlBody",
+          "value": "200"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|59888feb9904bb30d014dddb"
+      },
+      "parentId": "9de049c7-a352-4aa2-9f51-da3fcf3b663a"
+    }
+  ]
+}
