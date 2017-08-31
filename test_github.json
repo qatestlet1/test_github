@@ -1,0 +1,49 @@
+{
+  "front-version": "2.9.0",
+  "version": 3,
+  "nodes": [
+    {
+      "type": "Project",
+      "id": "ccbfbf04-95d3-48a0-9b89-a365595bb296",
+      "lastModified": "2017-08-31T11:25:50.271+02:00",
+      "name": "test_github",
+      "remoteModification": "2017-08-31T09:25:50.124Z"
+    },
+    {
+      "type": "Scenario",
+      "id": "bc8df34c-a80d-4968-b56d-e6a626be513c",
+      "lastModified": "2017-08-31T11:24:34.000+02:00",
+      "name": "Scenario 1",
+      "requestOrder": [],
+      "parentId": "ccbfbf04-95d3-48a0-9b89-a365595bb296"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded"
+        },
+        "bodyType": "Text",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        }
+      },
+      "id": "628274a5-4db8-453c-81b8-ef76c245d5be",
+      "lastModified": "2017-08-31T11:25:50.019+02:00",
+      "name": "Request 2",
+      "headers": [],
+      "parentId": "ccbfbf04-95d3-48a0-9b89-a365595bb296"
+    }
+  ]
+}
